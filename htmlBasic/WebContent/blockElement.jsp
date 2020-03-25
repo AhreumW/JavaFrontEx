@@ -4,18 +4,25 @@
 	"http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Block Element</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Block Element 타이틀</title>
 </head>
-<body>
 
-run as run on server 단축키 : ctrl + F11
+<body>	
 
-<p>일단 셋팅 시도하자.</p>
-<pre>서버 실행시 나타나는 기본 브라우저를 설정 해 줄 수 있다. 
-window -> preferences -> General 
--> Web Browser -> Use external web browser -> Chrome선택
-</pre>
+	<h1>블록요소</h1>
+	<h2>블록 요소 성질</h2>
+	<p>앞뒤로 줄 바꿈이 생긴다.</p>
 
+	<h1>블록요소(block element)</h1>
+	블록 요소는 마크업 시 줄 바꿈이 일어나는 성질을 가지고 있다. 
+	
+	<!-- 주석테스트 : 브라우저에서 보이지 않음 -->
+	
+	<p>(WAS가 이미 올라와있기 때문에 f5 새로고침 만으로도 코드가 브라우저에 반영된다.)</p>
+	
+	
+	
 </body>
+
 </html>
