@@ -10,6 +10,7 @@
 
 <body>	
 run as run on server 단축키 : ctrl + F11
+자동정렬 : ctrl+ shift + f
 
 <h1>일단 셋팅 시도하자.</h1>
 <h2>- 웹 브라우저 설정</h2>
