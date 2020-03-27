@@ -9,13 +9,13 @@
 <title>Insert title here</title>
 
 <style type="text/css">
-ul>li>.July {
+.July > p{
 	font-size: 15px;
 }
-ul>li>.p_yellow {
+.p_yellow > p {
 	color: yellow;
 }
-ol>li>.child_July {
+.child_July > p{
 	background-color: skyblue;
 }
 #tourNextYear > div {
@@ -28,17 +28,17 @@ ol>li>.child_July {
 
 <body>
 	<ul>
-		<li>
-			<p class='July'>7월의 여행지(글자크기 15)</p>
+		<li class='July'>
+			<p>7월의 여행지(글자크기 15)</p>
 		</li>
-		<li>
-			<p class='p_yellow'>난 노란색이야</p>
+		<li class='p_yellow'>
+			<p>난 노란색이야</p>
 		</li>
 	</ul>
 
 	<ol>
-		<li>
-			<p class='child_July'>7월의 여행지 (난 자식이야)</p>
+		<li class='child_July'>
+			<p>7월의 여행지 (난 자식이야)</p>
 		</li>
 		<li>
 			<p>8월의 여행지</p>
