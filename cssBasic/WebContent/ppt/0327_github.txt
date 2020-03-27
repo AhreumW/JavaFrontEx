@@ -1,0 +1,76 @@
+2020.03.27
+
+깃허브 레파지토리에서 커밋권한을 주면서 동료를 추가한다.(연동, collaborator)
+그 중 한 명이 push를 하면
+다른 사용자는 push를 할 수 없는 상황이 벌어진다. 
+
+
+컴퓨터		local-repository		global-repository
+	--commit->		--push->
+이클립스,git	레파지토리 폴더		github사이트
+하나의 프로젝트	
+
+
+<<과정>>
+<1인 레파지토리 git에 등록하는 과정>
+github에서 레파지토리를 만들고 
+컴퓨터에서 git(하나의 프로젝트)을 만들어 local폴더와 연동
+(add index로 local-repository로 프로젝트를 옮김.
+-> local-repository만으로도 내부적으로 코드를 복원할 수 있는 시스템을 갖춤)
+그리고 github사이트주소를 가져와 local폴더와 연동시킨 것이다.
+
+commit까지는 내 컴퓨터 내에서의 레파지토리 관리 (local)
+push를 하면 깃사이트 반영(global), deep copy 
+
+pull을 하면 깃사이트에 있는 프로젝트를 내려받음
+clone,check out : 워크스페이스가 아닌 로컬컴퓨터 레파지토리에 내려받음
+
+<여러명이 레파지토리 git에 등록하는 과정>
+	컴퓨터		local-repository		global-repository
+		-commit->		-push->
+A		1			1		1(최신의 상태)
+B		2			2		2
+A		2			2		에러(3x)
+
+권한을 받은 B가 push를 하면 글로벌 레파지토리에 프로젝트가 올라감
+A가 프로젝트를 만들고 커밋하고 (local에 올라감(2))
+A가 깃사이트에 올리려고 푸쉬를 하면 오류가 뜸 (3번하고 올라갈줄 알았는데 안 됨.) -> add index에 대해 알아야함
+		컴퓨터		local-repository					global-repository
+Index											0
+						push시 한번의 커밋한 단위를 1인덱스 부여	1	(최초의상태)
+B clone복제	1	addindex, commit		push		(먼저올림)		2	(반영)
+			2			2
+A 동시 작업		addindex, commit		push					X 1은 과거의상태 인정되지않음
+			2			2				
+A에러해결방법					pull (B까지의작업을 당겨옴) 2로 인덱스 맞춤
+pull 2			addindex, commit		push
+			3			3					3	(반영)
+이제 B도 pull을 하지 않으면 당길 수 없음.
+
+* pull할 때 커밋을 하지 않으면 깃허브 최신상태로 반영되기에 날라갈 수 있음(파일명이 다르면 괜찮).
+<branch를 이해하면 다른 사용자들이 다양하게 개발하고 합칠 수 있음.>
+	
+
+
+
+
+
+* 에러상황 1
+* pull해서 import project햇는데 src폴더에 아무 파일이 없어서 
+인식하지 못해 물리영역과 논리영역의 인식 충돌이 일어난 경우
+-> build path에서 (Source폴더) src폴더를 삭제하고 새로 add Folder해서 src폴더를 추가해주면
+물리영역과 논리영역이 일치되어 잘 실행된다. 
+
+
+
+동기화(Synchronize)
+과거와 현재가 나뉘어짐, 변화만 인지
+remoteFile, local_workspace
+github	,내컴퓨터레파지토리
+커밋전, 	커밋반영할수정파일
+
+Synchronize workspace
+-> Overwrite
+-> 원본과 충돌이 일어난 부분을 확인 후 뒤집어 씌운다. 
+
+
