@@ -8,21 +8,33 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Insert title here</title>
 	<style type="text/css">
-		#tea{
-			background-color: skyblue;
-		}
+		.house{
+			background-color: aqua;
+		}		
 	</style>
 </head>
 
 <body>
 
-	<p id="tea">건강에 좋은 차</p>
+	<h1 class='house'>class 선택자</h1>
 	
-	<ol>
-		<li>c</li>
-		<li>s</li>
-		<li>s</li>
-	</ol>
+	
+	<div class='house'>
+		잠이 잘 오는 집
+	</div>
+	
+	<div class='house'>
+		잠이 잘 오는 집2
+	</div>
+	
+	<div class='house'>
+		잠이 잘 오는 집3
+	</div>
+	
+	<div>
+		과연
+	</div>
+	
 	
 </body>
 
