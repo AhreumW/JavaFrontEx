@@ -17,6 +17,11 @@ h2 {
 	font-size: 30px;
 }
 
+p{
+	font-size: 20px;
+	font-weight: bold;
+}
+
 #h1_p {
 	font-size: 40px;
 	font-weight: bold;
@@ -25,12 +30,18 @@ h2 {
 #h2_p {
 	font-size: 30px;
 	font-weight: bold;
+} 
+
+div{
+	font: bold 50px italic;
 }
+
 
 </style>
 </head>
 <body>
-
+	
+	<div>This is heading div</div>
 	<h1>This is heading 1</h1>
 	<h2>This is heading 2</h2>
 	<p id='h1_p'>This is a paragraph.</p>
