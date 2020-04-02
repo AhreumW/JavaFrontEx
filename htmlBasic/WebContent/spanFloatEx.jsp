@@ -44,13 +44,14 @@ p {
 }
 
 p span {
-	float: right;
+	float: right;		/* float */
 	font-size: 250%;
 	border: 3px dotted orange;
 }
 </style>
 </head>
 <body>
+<!-- float는 블럭요소의 특징도 부수지만, 인라인요소의 특징도 부순다.  -->
 	<h1>금연일지</h1>
 	<p>
 		첫날은 담배냄새가 나지 않아서 좋았고, 다음날은 눈이 맑아진 것 같아 좋았고 그 다음날은 아들에게 당당하게 담배 피우지 말라고
