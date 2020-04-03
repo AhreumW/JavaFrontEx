@@ -33,6 +33,14 @@ table, tr, td {
 	border: 1px solid black;
 	border-collapse: collapse;
 }
+/* 
+#first_div, #second_div, #third_div, #fourth_div, #fifth_div, #sixth_div, #seventh_div{
+	width: 600px;
+	align: center;
+} */
+#first_div{
+	text-align: right;
+}
 
 .table_first_col {
 	background-color: #E14FCA;
@@ -115,7 +123,7 @@ table, tr, td {
 	<div id="all">
 		<div id="head_div"></div>
 
-		<div>
+		<div id="first_div">
 			<div id="title">
 				<h1>입사지원서</h1>
 			</div>
@@ -134,11 +142,10 @@ table, tr, td {
 					</tr>
 				</table>
 			</div>
-			
 		</div>
 
 		<!-- 2번째줄 -->
-		<div>
+		<div id="second_div">
 			<!-- 증명사진 붙이는 칸 -->
 			<div id="photo"></div>
 
@@ -179,7 +186,7 @@ table, tr, td {
 		</div>
 
 		<!-- 3번째줄 -->
-		<div>
+		<div id="third_div">
 			<table id="education_table">
 				<tr>
 					<td class="table_first_col" rowspan="4">학력</td>
@@ -218,7 +225,7 @@ table, tr, td {
 		</div>
 
 		<!-- 4번째줄 -->
-		<div>
+		<div id="fourth_div">
 			<table id="career_table">
 				<tr>
 					<td class="table_first_col" rowspan="4">경력</td>
@@ -252,7 +259,7 @@ table, tr, td {
 			</table>
 		</div>
 
-		<div>
+		<div id="fifth_div">
 			<!-- 5번째줄 1번째테이블 -->
 			<table id="body_table">
 				<tr>
@@ -295,7 +302,7 @@ table, tr, td {
 			</table>
 		</div>
 
-		<div>
+		<div id="sixth_div">
 			<!-- 6번째줄 1번째테이블 -->
 			<table id="family_table">
 				<tr>
@@ -379,7 +386,7 @@ table, tr, td {
 			</table>
 		</div>
 
-		<div>
+		<div id="seventh_div">
 			<!-- 7번째줄 1번째테이블 -->
 			<table id="OA_table">
 				<tr>
