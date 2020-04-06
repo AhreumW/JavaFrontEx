@@ -42,13 +42,15 @@
 			<!-- submit : form의 모든 input값을 전송함 
 				전송 버튼 or 전달 버튼
 				value 속성은 버튼에 표시할 글자 -->
-			<input type="submit" value="전송">	<!-- 여기서의 value는 버튼이름 / 위 input들의 value는 db로 넘어가는 값 -->
+			<input type="submit" value="전송" style="border: 1px solid red;">	<!-- 여기서의 value는 버튼이름 / 위 input들의 value는 db로 넘어가는 값 -->
 			<!-- reset : form의 모든 input값을 초기화시킴
 				초기화 버튼 -->
-			<input type="reset" value="취소">
+			<input type="reset" value="취소" style="border: 1px solid red;">
 			<!-- button : 범용 버튼 
 				커스텀마이징해서 사용-->
-			<input type="button" value="확인">
+			<input type="button" value="확인" style="border: 1px solid red;">
+			
+			<button style="border: 1px solid red;">이것도 확인버튼</button>	<!-- submit과 비슷해보임 -->
 		</div>
 		<div>
 			파일 올리기:
