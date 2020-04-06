@@ -17,6 +17,7 @@ h1 {
 }
 </style>
 </head>
+
 <body>
 	<div>
 		<h1>What is Lorem Ipsum?</h1>
@@ -50,6 +51,7 @@ h1 {
 			years, sometimes by accident, sometimes on purpose (injected humour
 			and the like).</p>
 	</div>
+	
 	<div>
 		<h1>Where does it come from?</h1>
 	</div>

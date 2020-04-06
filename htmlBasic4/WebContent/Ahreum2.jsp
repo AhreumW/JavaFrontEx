@@ -28,6 +28,7 @@ h1 {
 }
 </style>
 </head>
+
 <body>
 	<div style="width: 1200px; margin-left: 400px;">
 	 <!-- <div style="width: 1200px; margin: 0 auto;"> -->
@@ -35,6 +36,7 @@ h1 {
 			<div class="content">
 				<h1>What is Lorem Ipsum?</h1>
 			</div>
+			
 			<div class="content">
 				<p>
 					<strong>Lorem Ipsum</strong> is simply dummy text of the printing
@@ -50,10 +52,12 @@ h1 {
 				</p>
 			</div>
 		</div>
+		
 		<div class="frame">
 			<div class="content">
 				<h1>Why do we use it?</h1>
 			</div>
+			
 			<div class="content">
 				<p>It is a long established fact that a reader will be
 					distracted by the readable content of a page when looking at its
@@ -67,10 +71,12 @@ h1 {
 					sometimes on purpose (injected humour and the like).</p>
 			</div>
 		</div>
+		
 		<div class="frame">
 			<div class="content">
 				<h1>Where does it come from?</h1>
 			</div>
+			
 			<div class="content">
 				<p>Contrary to popular belief, Lorem Ipsum is not simply random
 					text. It has roots in a piece of classical Latin literature from 45
@@ -91,10 +97,12 @@ h1 {
 					the 1914 translation by H. Rackham.</p>
 			</div>
 		</div>
+		
 		<div class="frame">
 			<div class="content">
 				<h1>Where can I get some?</h1>
 			</div>
+			
 			<div class="content">
 				<p>There are many variations of passages of Lorem Ipsum
 					available, but the majority have suffered alteration in some form,
