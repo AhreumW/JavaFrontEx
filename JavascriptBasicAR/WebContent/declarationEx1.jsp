@@ -17,14 +17,14 @@
 	var num = 10;
 	var sum = num + 2; 
 	
-	document.write('<br>sum: '+sum);
+	document.write('<br/>sum: '+sum);
 	
 	/* 브라우저에서 f12를 누르면 개발자도구를 통해 디버깅이 가능하다. */
 	
 	var testStr = '자바';
 	var txt1 = "스크립트";
 	
-	document.write('<br>'+testStr + txt1);
+	document.write('<br/>'+testStr + txt1);
 	/* 	''도 문자열이다.
 		싱글따옴표를 쓰자	 */
 		
