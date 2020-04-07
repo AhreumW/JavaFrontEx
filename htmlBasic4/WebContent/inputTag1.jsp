@@ -47,57 +47,70 @@
 			<p>
 				<!-- label ** 중요 , 관련 id와 일치시켜 적어주는 것이 좋다. -->
 				<label for="search">검색 : </label>
-				<input type="search" id="search" />
+				<!-- 검색:
+					검색 박스로 텍스트 입력 시 지우기(X) 버튼이 나타난다. -->
+				<input type="search" id="search"/>
 			</p>
 			<p>
 				<label for="email">이메일 : </label>
-				<input type="email" id="email" />
+				<!-- email 입력 양식에 맞지 않을 경우 
+					오류 메시지를 제공하며
+					아이폰에서는 입력하기 편리한 키패드로 변환한다. -->
+				<input type="email" id="email"/>
 			</p>
 			<p>
 				<label for="url">사이트 주소 : </label>
-				<input type="url" id="url" />
+				<!-- url 입력 양식에 맞지 않을 경우 오류 메시지를 
+					제공하며 아이폰에서는 입력하기 편리한 키패드로 변환한다. -->
+				<input type="url" id="url"/>
 			</p>
 			<p>
 				<label for="tel">전화번호 : </label>
-				<input type="tel" id="tel" />
+				<!-- 전화번호 입력 박스 -->
+				<input type="tel" id="tel"/>
 			</p>
 			<p>
 				<label for="number">수량 : </label>
-				<input type="number" min="1" max="10" step="2" value="1" id="number" />
-				<!-- 1 3 5 7 9 -->
+				<!-- 숫자 입력 박스에 직접 입력하거나 상하 화살표를 눌러 선택할 수 있다. -->
+				<input type="number" min="1" max="10" step="2" value="1" id="number"/>
+				<!-- 1 3 5 7 9 	/ step:2씩 증가-->
 			</p>
 			<p>
 				<label for="range">만족도 : </label>
-				<input type="range" min="1" max="10" step="2" value="1" id="range" />
+				<!-- 숫자 범위 *슬라이드*가 나온다. -->
+				<input type="range" min="1" max="10" step="2" value="1" id="range"/>
 				<!-- 1 3 5 7 9 -->
 			</p>
 			<p>
 				<label for="date">날짜 : </label>
-				<input type="date" id="date" />
+				<!-- 연,월,일을 선택할 수 있는 박스가 나온다. -->
+				<input type="date" id="date"/>
 			</p>
 			<p>
 				<label for="datetime">날짜시간(UTC) : </label>
-				<input type="datetime" id="datetime" />
+				<!-- 연,월,일과  시,분을 선택할 수 있는 박스가 나온다.(UTC 국제표준시간) -->
+				<input type="datetime" id="datetime"/>
 			</p>
 			<p>
 				<label for="datetime-local">날짜시간 : </label>
-				<input type="datetime-local" id="datetime-local" />
+				<!-- 연,월,일,시,분을 선택할 수 있다.(*local 시스템 시간) -->
+				<input type="datetime-local" id="datetime-local"/>
 			</p>
 			<p>
 				<label for="month">월 : </label>
-				<input type="month" id="month" />
+				<input type="month" id="month"/>
 			</p>
 			<p>
 				<label for="week">주 : </label>
-				<input type="week" id="week" />
+				<input type="week" id="week"/>
 			</p>
 			<p>
 				<label for="time">시간 : </label>
-				<input type="time" id="time" />
+				<input type="time" id="time"/>
 			</p>
 			<p>
 				<label for="color">색상 : </label>
-				<input type="color" id="color" />
+				<input type="color" id="color"/>
 			</p>
 			<p>
 				<!-- 완료버튼이 생긴다. -->
