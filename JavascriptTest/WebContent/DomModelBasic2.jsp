@@ -47,15 +47,26 @@
 </body>
 
 <script type="text/javascript">
-
+	/* 	관련있는 것들(객체단위)을 묶어서 정리한다. 
+		최소단위로서 모듈화하여 작성하기 
+		-> 공통단을 찾기 편해진다. 	*/
 	var title2 = document.getElementById('title2');	
-	var list = document.getElementById('list');	
-	var firstChild = document.getElementById('firstChild');	
-	
 	title2.style.border = '2px dotted green';
+
+	var list = document.getElementById('list');	
 	list.style.fontSize = '10px';
 	list.style.textAlign = 'center';
+
+	var firstChild = document.getElementById('firstChild');	
 	firstChild.style.background = 'yellow';
+		
+	
+	/* 이렇게 하나의 변수로 코드를 짠다면 일회성으로서 용량을 줄일 수 있다. 
+		그러나 객체를 재사용해 사용한다면 요소마다 따로 선언해주는 것이 좋다. 
+	var myObj = document.getElementById('title2');	
+	myObj = document.getElementById('list');	
+	myObj = document.getElementById('firstChild');	
+	*/
 </script>
 
 </html>
