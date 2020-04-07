@@ -418,7 +418,7 @@ td {
 			<!-- 7번째줄 1번째테이블 -->
 			<table id="OA_table">
 				<tr>
-					<td class="table_first_col" rowspan="4" style="word-spacing: 5px;">
+					<td class="table_first_col" rowspan="4" style="word-spacing: 10px;">
 						O A 능 력</td>
 					<td style="text-align: left; padding-left: 10px; width: 170px;">
 						워드 (한글/MS워드)</td>
