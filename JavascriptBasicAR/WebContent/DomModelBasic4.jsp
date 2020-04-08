@@ -52,11 +52,17 @@
 
 <script type="text/javascript">
 	
+	//변수명 지을때 
+	//태그선택하면 객체의 의미로 h1Obj 등으로 짓는 것이 좋다. 
+	//복수라면 ulObjArr 배열로~
+	//현업에서는 Arr를 잘 쓰지 않기때문에 
+	//ulObjs 혹은 ulObjList로 짓는 것이 좋다. (list추천)
 	var ulObjArr = document.getElementsByTagName('ul');
 	
 	var firstUlObj = ulObjArr[0];
 	var secondUlObj = ulObjArr[1];
 	
+	//여러개라면 first, second처럼 의미있게 적는것이 좋다. 1,2로 짓지말기 
 	var firstLiArr = firstUlObj.getElementsByTagName('li');
 	var secondLiArr = secondUlObj.getElementsByTagName('li');
 	
