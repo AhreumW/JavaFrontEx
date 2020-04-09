@@ -6,7 +6,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>입사지원서_war</title>
 
 <style type="text/css">
 /* 처음 마진 패딩 속성 없애기 */
@@ -22,11 +22,11 @@ table {
 table, tr, td {
 	border: 1px solid black;
 	border-collapse: collapse;
-	font-size: 12px;
-	font-weight: bold;
 	padding: 3px;
 }
-td {
+td {			/* 폰트속성은 table tr에 다 넣지 말고 td에만 적용해서 불필요한 중복을 피하자  */
+	font-size: 12px;
+	font-weight: bold;
 	height: 15px;
 	text-align: center;
 }
@@ -72,7 +72,7 @@ td {
 	border: 1px solid black;
 	width: 100px;
 	height: 137px;
-	margin: 5px 0;
+	margin: 5px 0px;
 	float: left;
 }
 #info_table {
@@ -126,7 +126,12 @@ td {
 </style>
 </head>
 <body>
-	<div id="all" style="margin: 40px 15px;">
+	<!-- 수업에서는 이름, 낙타표기법으로 통일해서 쓰기  -->
+	<!-- 수업에서는 % 쓰지말기, px로 쓰기  -->
+	<!-- 첫 열 word-spacing보다는 word-wrap을 쓰는 것이 나음 -->
+	<!-- word속성까지 알 필요는 없으나 word-wrap은 기억하면 좋음~ -->
+	<!-- all이라는 이름은  다음을 위해 양보하기 -->
+	<div id="application_container" style="margin: 40px 15px;">
 	
 		<!-- 머릿상자 -->
 		<div id="head_div"></div>
@@ -157,7 +162,7 @@ td {
 
 			<table id="info_table">
 				<tr>
-					<td class="category">성 명</td>
+					<td class="category" style="word-spacing: 17px; width:100px;">성 명</td>
 					<td colspan="3" style="text-align: left;">
 						<span style="margin-left: 130px;">
 							(한문)
@@ -165,7 +170,7 @@ td {
 					</td>
 				</tr>
 				<tr>
-					<td class="category" style="width: 80px;">주민번호</td>
+					<td class="category" style="word-spacing: 10px;">주민번호</td>
 					<td style="width: 130px;"></td>
 					<td class="category" style="width: 110px;">생년월일</td>
 					<td style="width: 170px; text-align: right; word-spacing: 7px;">년 월 일
@@ -175,7 +180,7 @@ td {
 					</td>
 				</tr>
 				<tr>
-					<td class="category">주소</td>
+					<td class="category" style="word-spacing: 17px;">주 소</td>
 					<td colspan="3"></td>
 				</tr>
 				<tr>
@@ -185,7 +190,7 @@ td {
 					<td></td>
 				</tr>
 				<tr>
-					<td class="category">핸드폰</td>
+					<td class="category" style="word-spacing: 2px;">핸 드 폰</td>
 					<td></td>
 					<td class="category">결혼유무</td>
 					<td>미혼/기혼</td>
@@ -251,11 +256,11 @@ td {
 			<table id="career_table">
 				<tr>
 					<td class="table_first_col" rowspan="4">경 력</td>
-					<td class="table_first_row" style="width: 140px;">근무기간</td>
-					<td class="table_first_row" style="width: 140px;">직장명</td>
-					<td class="table_first_row" style="width: 80px;">직위</td>
-					<td class="table_first_row" style="width: 140px;">담당업무</td>
-					<td class="table_first_row" style="width: 80px;">비고</td>
+					<td class="table_first_row" style="width: 170px;">근 무 기 간</td>
+					<td class="table_first_row" style="width: 170px;">직 장 명</td>
+					<td class="table_first_row" style="width: 80px;">직 위</td>
+					<td class="table_first_row" style="width: 140px;">담 당 업 무</td>
+					<td class="table_first_row" style="width: 80px; word-spacing: 10px;">비 고</td>
 				</tr>
 				<tr>
 					<td style="padding-left: 25px; word-spacing: 15px;">. . ~ .</td>
@@ -386,7 +391,7 @@ td {
 			<table id="language_table">
 				<tr>
 					<td class="table_first_col" rowspan="6">외 국 어</td>
-					<td>언어</td>
+					<td>언 어</td>
 					<td>능 력</td>
 				</tr>
 				<tr>
