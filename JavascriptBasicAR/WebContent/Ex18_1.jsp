@@ -54,12 +54,13 @@
 	//else대신 else if 사용한다면?
 	for(var i = 0; i < yearList.length; i++){
 		
+		//트랜잭션의 단위로 ~년은 윤년이다가 같이 묶여야 수정시 한꺼번에 수정된다. 
 		if((yearList[i] % 4 == 0) && (yearList[i] % 100 != 0)){
 			resultList[i] = yearList[i]+'년은 윤년이다.';
 		}else if( yearList[i] % 400 == 0 ){
 			resultList[i] = yearList[i]+'년은 윤년이다.';
-		//}else if( !(yearList[i] % 400 == 0) ){
 		//}else if( !((yearList[i] % 4 == 0) && (yearList[i] % 100 != 0)) && !(yearList[i] % 400 == 0) ){
+		//}else if( (!(yearList[i] % 4 == 0) || !(yearList[i] % 100 != 0)) && (yearList[i] % 400 != 0) ){
 		}else if( ((yearList[i] % 4 != 0) || (yearList[i] % 100 == 0)) && (yearList[i] % 400 != 0) ){
 			resultList[i] = yearList[i]+'년은 윤년이 아니다.';
 		}
