@@ -10,11 +10,111 @@
 
 	//날짜 + 로또번호 버튼
 	function lottoDateFnc(){
-		var totalObjList = document.getElementById('contentRow905');
-
-//		var lottoTimeObjList = totalObjList
 		
-		document.getElementById('lottoTotal').innerHTML = 'ok';
+		//시작 테이블 번호
+		var startTableCode = 905;
+		//마지막 테이블 번호 
+		var lastTableCode = 894;
+		//테이블 개수 
+		var tableNum = lastTableCode - startTableCode + 1;
+		
+		//날짜 저장 리스트 
+		var timeList = new Array();
+		//로또 번호 저장 리스트
+		var lottoList = new Array();
+		for(var i = 0; i < tableNum; i++){
+			lottoList[i] = [];
+		}
+		
+		/* 테이블 번호 , 테이블단위로 불러온다. */
+		for(var t = 0; t < tableNum ; t++){
+			
+			var tempN = t + lastTableCode;
+			var totalObjList = document.getElementById('contentRow'+tempN);
+			
+			/* 로또 숫자 가져오기  */
+			var imgObjList = totalObjList.getElementsByTagName('img');
+			
+			/* img태그들 */
+			for(var i = 0; i < 7; i++){
+				
+				/* img태그의 src 값에서 로또 숫자를 가져오기  */
+				// http://localhost:8090/images/slotto_ball/3.gif
+				var ballNumStr = imgObjList[i].src.split('/');
+				// ballNumStr[5] -> 3.gif
+				var ballNum = ballNumStr[5].substring(0,2);
+				
+				if(ballNum.charAt(1) == '.'){
+					ballNum = ballNum.charAt(0);
+				}
+				
+				/* 새로운 로또번호리스트에 잘라낸 숫자 저장 */
+				lottoList[t][i] = ballNum;
+			}
+		
+			
+		}
+		
+		document.getElementById('lottoTotal').innerHTML += lottoList[0][0];
+		
+		/* for(var t = 0; t < tableNum ; t++){
+			for(var i = 0; i < lottoList.length; i++){
+				document.getElementById('lottoTotal').innerHTML += lottoList[i][t];
+			}
+		} */
+		
+		
+		//한 회 로또 컨텐트 테이블 리스트
+		/*for(i = 905; i <= 894; i--){
+			var totalObjList = document.getElementById('contentRow'+i);
+			
+			alert(totalObjList[0].tagName);
+			
+			 //날짜 저장 리스트 
+			var timeList = new Array();
+			//로또 번호 저장 리스트
+			var lottoList = new Array();
+			
+			//테이블 반복
+			for(var i = 0; i<totalObjList.length; i++){
+				//테이블의 td 리스트 	
+				var lottoTimeObjList = totalObjList.getElementsByTagName('td');
+				
+				if(i == 2){	//3번째 td
+					timeList[i] = lottoTimeObjList[2];
+					document.write(lottoTimeObjList[2]);
+				}
+				
+			}
+			
+			
+			//테이블 반복
+			for(var i = 0; i<totalObjList.length; i++){
+				//테이블의 td 리스트 	
+				var lottoNumObjList = totalObjList.getElementsByTagName('td');
+				
+				if(i == 3){	//4번째 td
+					var ballNumList = lottoNumObjList[3].getElementsByTagName('img');
+					
+					for(var n = 0; n<ballNumList.length; n++){
+						var ballNum = ballNumList[n].src.substring(19, 21);
+						
+						if(ballNum.charAt(1) == '.'){
+							ballNum.substring(0,1);
+						}
+						
+						lottoList[i] = ballNum;
+						alert(lottoList[i]);
+					}
+					
+					
+				}
+				
+				document.getElementById('lottoTotal').innerHTML = lottoList[0];
+				
+			} 
+		}*/
+	
 		
 	}
 	
