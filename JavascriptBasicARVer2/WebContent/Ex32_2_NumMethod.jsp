@@ -41,11 +41,11 @@
 	  Number("10") + "<br>" + 
 	  Number("  10") + "<br>" +
 	  Number("10  ") + "<br>" +
-	  Number(" 10  ") + "<br>" +
+	  Number(" 10  ") + "<br>" +	
 	  Number("10.33") + "<br>" + 
-	  Number("10,33") + "<br>" +
-	  Number("10 33") + "<br>" +
-	  Number("John");			
+	  Number("10,33") + "<br>" +	/* NaN : Not a Number */
+	  Number("10 33") + "<br>" +	/* NaN : Not a Number */
+	  Number("John");				/* NaN : Not a Number */
 	  /* 	1
 			0
 			10
