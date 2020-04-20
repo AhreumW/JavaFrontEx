@@ -29,6 +29,7 @@
 	 
 	
 	/* Ex43_1의 onclick도 전의 옛~~~날 방식 코딩 */
+	/* 물론 Ex43_1 같이 태그 내 onclick이 더 좋은 방식임  */
 	window.onload = function() {	
 	
 		var divObj = document.getElementById('resultDiv');
