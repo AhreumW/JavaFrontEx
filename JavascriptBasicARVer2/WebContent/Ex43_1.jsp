@@ -12,16 +12,26 @@
 		var nameObj = document.getElementById('inputName');
 		var birthObj = document.getElementById('birthYear');
 		
+		if(isNaN(birthObj.value)){
+			alert('숫자만 입력해주세요.');
+			return;
+		}
+		
 		var divObj = document.getElementById('resultDiv');
 		
-		divObj.innerHTML = "이름 : " + nameObj.value + "<br/>";
-		divObj.innerHTML += "태어난 해 : " + birthObj.value;
-		
+		divObj.innerHTML = "이름 : " + nameObj.value + "<br/>"+ "태어난 해 : " + birthObj.value;
 	}
 	 
-	window.onload = function() {	 
-		
+	
+	//window : 
+	//하나의 브라우저 - document의 상위
+	window.onload = function() {	 //.onload : 이벤트 시점 정의 -> window실행 시점
+	//태초의 시점, 초기화, 생성자의 영역
+	//<body>태그를 다 읽고 window.onload 수행, 사용자가 보기 전 완성되고 실행된다.
+	
 		var divObj = document.getElementById('resultDiv');
+		//지역변수, 초기에만 사용하고 회수 
+	
 		divObj.style.border = "1px solid black";
 	}
 	
