@@ -28,6 +28,9 @@ document.onmousemove=function(e){
 
 <body>
 
+	<div style="height:500px;">
+	</div>
+	
      <form name="form1"  action="#">
 		<p><input type="text" name="clt_x" id="clt_x"/></p>
 		<p><input type="text" name="clt_y" id="clt_y"/></p>
@@ -36,6 +39,9 @@ document.onmousemove=function(e){
 		<p><input type="text" name="pg_x" id="pg_x"/></p>
 		<p><input type="text" name="pg_y" id="pg_y"/></p>
 	</form>
+	
+	<div style="height:500px;">
+	</div>
 	
 </body>
 </html>

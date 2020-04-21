@@ -23,10 +23,10 @@
 <body>
 	<!-- BOM : Browser Object Model 브라우저 객체 모델 -->
 <!-- 	window의 객체들 (window은 최상위 객체) 
-			document : 문서 객체에 대한 정보 제공
+			document : 문서 객체에 대한 정보 제공 * 
 			navigator : 브라우저에 대한 정보 제공
-			location : 위치url관련 정보 제공
-			screen : 스크린(모니터)에 대한 정보 제공
+			location : 위치 url 관련 정보 제공 *
+			screen : 스크린(모니터)에 대한 정보 제공 *
 			history : 인터넷 방문기록에 대한 정보 제공 
 		
 		window 레벨의 함수들은 window객체를 생략하고 호출 가능하다. 
