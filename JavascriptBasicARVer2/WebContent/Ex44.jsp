@@ -32,7 +32,6 @@
 	}
 	
 	window.onload = function(){
-		
 		var btnObjList = document.getElementsByTagName('button');
 		var btn2Obj = btnObjList[1];
 		 
@@ -40,6 +39,7 @@
 		btn2Obj.onmouseout = outChangeBgFnc;
 		btn2Obj.onclick = alertBtn2Fnc;
 		
+		/* mouseout, mouseover */
 		/* mouseleave, mouseenter */
 	}
 	
