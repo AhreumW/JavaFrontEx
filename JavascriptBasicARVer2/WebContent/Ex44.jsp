@@ -5,7 +5,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
-
 <script type="text/javascript">
 
 	function testFnc(){
@@ -30,7 +29,12 @@
 	function alertBtn2Fnc(){
 		alert('버튼2 호출');
 	}
+
 	
+	/* 	기존 방식(DOM level0)이벤트의 문제점	
+		- 객체에 이벤트를 직접 연결하여 작동하게 하는 고전적인 방식을 DOM level0이라고 한다. 
+		- 화면단 : html, css, javascript, jquery
+	*/
 	window.onload = function(){
 		var btnObjList = document.getElementsByTagName('button');
 		var btn2Obj = btnObjList[1];
