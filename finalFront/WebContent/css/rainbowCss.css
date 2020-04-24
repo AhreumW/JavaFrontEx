@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+div{
+	height: 50px;
+}
+
+#red{
+	border: 10px solid red;	
+}
+#orange{
+	border: 10px dotted orange;	
+}
+#yellow{
+	border: 10px dashed yellow;	
+}
+#green{
+	border: 10px double green;	
+}
+#blue{
+	border: 10px groove blue;	
+}
+#darkBlue{
+	border: 10px ridge darkBlue;	
+}
+#purple{
+	border: 10px inset purple;	
+}
