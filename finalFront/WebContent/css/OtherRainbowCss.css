@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* 다른사람코드 */
+div{
+	width: 150px;
+	height: 50px;
+	margin: auto;
+}
+
+#div1{
+	border: 10px solid red;
+}
+#div2{
+	border: 10px dashed orange;
+}
+#div3{
+	border: 10px dotted yellow;
+}
+#div4{
+	border: 10px solid green;
+}
+#div5{
+	border: 10px dashed blue;
+}
+#div6{
+	border: 10px dotted indigo;
+}
+#div7{
+	border: 10px ridge purple;
+}
