@@ -5,7 +5,9 @@
 <head>
 	<title>웹 문서구조2</title>
 	<!-- 외부형 선언문 -->
-	<script type="text/javascript" src="./domControlEx12.js"></script>
+	<script type="text/javascript" src="./domControlEx12.js">alert('test');</script>
+	<!-- src 주소로 이동하기 때문에 (우선순위)  -->
+	<!-- alert('test');는 수행되지 않는다.  -->
 </head>
 <body>
    <div>
