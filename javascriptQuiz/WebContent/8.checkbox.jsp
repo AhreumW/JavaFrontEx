@@ -7,6 +7,16 @@
 <!-- checkbox는 체크가 되면 true를 반환한다      -->
 <script type="text/javascript">
 
+	/* 다른 사람 코드 */
+// 	function allSel(bool) {
+// 	    var obj = document.getElementsByName("rain");
+// 	    for (var i = 0; i < obj.length; i++) {
+// 	       //폼에서 체크박스의 rain의 체크를 true로 저장
+// 	       document.forms[0].rain[i].checked = bool;	//document.forms[0]. - 추천하지 않지만 오픈소스회사에서 사용할 수 있다.
+// 	       //form[](폼으로 싸고).이름[]:배열로 받아요
+// 	    }
+// 	 }
+
 	function allSel(myObj){
 
 		var checkBoxList = document.getElementsByName('rain');
